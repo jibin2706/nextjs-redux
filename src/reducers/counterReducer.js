@@ -2,7 +2,7 @@ import { INCREMENT, DECREMENT, RESET } from "../actions/types";
 
 const initialState = { counter: 0 };
 
-export default function(state = initialState, action) {
+export default function reducer(state = initialState, action) {
   switch (action.type) {
     case INCREMENT:
       return { counter: state.counter + 1 };
